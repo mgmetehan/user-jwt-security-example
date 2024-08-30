@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: user-jwt-security-example
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user_jwt
+    username: postgres
+    password: toor
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  expiration:
+    time: 15000
+  secret:
+    #openssl key generation online
+    key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCdI1YMhN4TT/RUz+59zAIutrUD2Usvyd+oNPDxisSv4oYd0ckHGBypUAqX0M+geLZMtWZrgfTRnkcI5PLDY8Bm0KxYfJlFSXosPIey4ED1xxfvmynHcCbGdxLL3B33I4bWGVzqoEdsFsssXbBjjfRHxP33+XhWzHqwx6t3izeK6QIDAQAB
