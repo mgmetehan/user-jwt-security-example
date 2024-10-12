@@ -1,5 +1,6 @@
 package com.mgmetehan.user_jwt_security_example.security;
 
+import com.mgmetehan.user_jwt_security_example.filter.JwtAuthFilter;
 import com.mgmetehan.user_jwt_security_example.service.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

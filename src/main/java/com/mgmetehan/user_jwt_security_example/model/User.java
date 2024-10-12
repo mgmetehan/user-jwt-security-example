@@ -31,14 +31,13 @@ public class User extends BaseEntity implements UserDetails {
     private String name;
     private String surname;
 
+    //MUST BE USED FOR AUTHENTICATION
     private String username;
     private String password;
-
     private boolean accountNonExpired;
     private boolean isEnabled;
     private boolean accountNonLocked;
     private boolean credentialsNonExpired;
-
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @JoinTable(name = "authorities", joinColumns = @JoinColumn(name = "user_id"))
     @Column(name = "role", nullable = false)

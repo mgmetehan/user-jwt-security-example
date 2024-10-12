@@ -1,4 +1,4 @@
-package com.mgmetehan.user_jwt_security_example.security;
+package com.mgmetehan.user_jwt_security_example.filter;
 
 import com.mgmetehan.user_jwt_security_example.service.JwtService;
 import com.mgmetehan.user_jwt_security_example.service.UserDetailsServiceImpl;
